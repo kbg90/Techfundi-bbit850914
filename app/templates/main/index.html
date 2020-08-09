@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <div class="ui text container">
+      <h1>Welcome to funditech {% if not (current_user.is_authenticated) %} world {% else %} {{ current_user.full_name() }} {% endif %},</h1>
+
+        <p>The Global Outbreak Alert and Response Network (GOARN) has launched a
+GOARN COVID-19 Knowledge hub. The hub is designed as a central repository of
+quality public health informa</p>
+<p>WHO Director-General Dr. Tedros, in his regular media briefing yesterday,
+cautioned that “we have a long way to go. This virus will be with us for a long
+time”. He added that “the world cannot go back to the way things were. There
+must be a “new normal” – a world that is healthier, safer and better prepared”.</p>
+<p>All available evidence for COVID-19 suggests that SARS-CoV-2 has a zoonotic
+source. Many researchers have been able to look at the genomic features of
+SARS-CoV-2 and have found that evidence does not support that SARS-CoV-2 is
+a laboratory construct. A constructed virus would show a mix of known elements
+within genomic sequences – this is not the case. For more details, please see
+‘subject in focus’.</p>
+
+    </div>
+{% endblock %}
